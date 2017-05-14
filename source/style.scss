@@ -1,0 +1,47 @@
+$cor_princial : #028772;
+$cor_secundaria : #fff;
+
+
+p {
+	color: $cor_secundaria;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	&.container-fluid {
+		padding: 20px;
+	}
+}
+
+.panel {
+	width: 100%;
+}
+	.panel__container {
+		margin: 0 auto;
+		&.panel--introduction {
+			color: green;
+		}
+	}
+		.panel__container__texto {
+				color: #000;
+			
+		}
+			.panel__container__texto__link {
+				color: #123;
+			}
+		.panel__container__image {
+
+		}
+
+.btn {
+	padding: 10px;
+	border-radius: 3px;
+	background-color: #ccc;
+	@include breakpoint(tablet) {
+		padding: 20px;
+	}
+	&.btn--sucess {
+		background-color: $cor_princial;
+	}
+}
